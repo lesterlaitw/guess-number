@@ -12,8 +12,8 @@ while True:
 	end = int(end)
 	if start < end:
 		break
-	elif start > end:
-		print('開始值不能大於結束值，請重新輸入!')
+	elif start >= end:
+		print('開始值不能 "大於" 或 "等於" 結束值，請重新輸入!')
 r = random.randint(start, end)
 while True:
 	count += 1 #快速寫法，count = count + 1
